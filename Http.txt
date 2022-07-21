@@ -1,0 +1,61 @@
+WHAT IS HTTP?
+HTTP stands for Hyper Text Transfer Protocol. It is a protocol that allows the fetching of resources, such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, Your server will receive requests from the browser that follows HTTP. It then responds with an HTTP response that all browsers are able to parse.
+
+WHAT IS HTTP METHODS??
+They are those different ways by which the client and server can communicate effectively.
+HTTP is designed to enable communications between clients and servers.HTTP works as a request-response protocol between a client and server.
+
+HTTP Methods includes::
+GET
+POST
+PUT
+HEAD
+DELETE
+PATCH
+OPTIONS
+CONNECT
+TRACE
+The two most commonly used HTTP methods are: GET and POST.
+
+THE GET METHOD.
+GET is used to request data from a specified resource.
+GET requests can be cached, it also remains in the browser history.It can be bookmarked,and can never be used when dealing with sensitive data.It has length restrictions and is not modified (only used to request data)
+
+
+The POST Method.
+POST is used to send data to a server to create/update a resource.
+The data sent to the server with POST is stored in the request body of the HTTP request.
+POST requests are never cached, does not remain in the browser history and cannot be bookmarked.Also it has no restriction on data length.
+
+
+The PUT Method
+PUT is used to send data to a server to create/update a resource.
+The difference between POST and PUT is that PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result. In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+
+
+The HEAD Method
+HEAD is almost identical to GET, but without the response body.
+In other words, if GET /users returns a list of users, then HEAD /users will make the same request but will not return the list of users.
+HEAD requests are useful for checking what a GET request will return before actually making a GET request - like before downloading a large file or response body.
+
+
+The DELETE Method
+The DELETE method deletes the specified resource.
+
+
+The PATCH Method
+The PATCH method is used to apply partial modifications to a resource.
+
+
+The OPTIONS Method
+The OPTIONS method describes the communication options for the target resource.
+
+
+The CONNECT Method
+The CONNECT method is used to start a two-way communications (a tunnel) with the requested resource.
+
+
+The TRACE Method
+The TRACE method method is used to perform a message loop-back test that tests the path for the target resource (useful for debugging purposes).
+
+
